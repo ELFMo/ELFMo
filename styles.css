@@ -6,9 +6,9 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
+    background-color: #333; /* Dark theme */
+    color: #fff; /* White text */
+    padding: 2em 0; /* Increased padding */
     text-align: center;
 }
 
@@ -21,11 +21,21 @@ header {
 .header-content h1 {
     margin: 0;
     padding-right: 1em;
+    font-size: 3em; /* Increased font size */
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 100px; /* Increased logo size */
+    border: 2px solid #fff; /* White border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #333; /* Dark background for the logo */
+    padding: 10px; /* Padding around the logo */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.itea-logo {
+    height: 50px;
+    margin-top: 10px; /* Space above the ITEA logo */
 }
 
 nav ul {
@@ -43,6 +53,13 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.2em; /* Increased font size */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
 }
 
 section {
@@ -50,6 +67,10 @@ section {
     margin: 1em 0;
     background-color: #fff;
     border-radius: 8px;
+}
+
+section:last-of-type {
+    margin-bottom: 4em; /* Added space to prevent footer overlap */
 }
 
 footer {
@@ -60,4 +81,16 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
 }
