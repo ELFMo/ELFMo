@@ -1,32 +1,27 @@
 /* Importing the Roboto font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
-
 header {
     background-color: #333; /* Dark theme */
     color: #fff; /* White text */
     padding: 2em 0; /* Increased padding */
     text-align: center;
 }
-
 .header-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .header-content h1 {
     margin: 0;
     padding-right: 1em;
-    font-size: 3em; /* Increased font size */
+    font-size: 4em; /* Increased font size */
 }
-
 .logo {
     height: 100px; /* Increased logo size */
     border: 2px solid #fff; /* White border */
@@ -35,52 +30,43 @@ header {
     padding: 10px; /* Padding around the logo */
     border-radius: 8px; /* Rounded corners */
 }
-
 .itea-logo {
     height: 50px;
     margin-top: 10px; /* Space above the ITEA logo */
 }
-
 .funding-logo {
     height: 50px;
     margin: 10px; /* Space around the funding logos */
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     background-color: #444;
     text-align: center;
 }
-
 nav ul li {
     display: inline;
     margin: 0 1em;
 }
-
 nav ul li a {
     color: #ccc; /* Changed link color to grey */
     text-decoration: none;
     font-size: 1.2em; /* Increased font size */
     transition: background-color 0.3s ease;
 }
-
 nav ul li a:hover {
     background-color: #555;
     border-radius: 4px;
 }
-
 section {
     padding: 2em;
     margin: 1em 0;
     background-color: #fff;
     border-radius: 8px;
 }
-
 section:last-of-type {
     margin-bottom: 4em; /* Added space to prevent footer overlap */
 }
-
 footer {
     text-align: center;
     padding: 1em 0;
@@ -90,17 +76,14 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
 /* Add this rule to change all link colors */
 a {
     color: #666; /* Changed link color to darker grey */
     text-decoration: none;
 }
-
 a:hover {
     color: #444; /* Even darker grey on hover */
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
