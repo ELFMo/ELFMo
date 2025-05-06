@@ -38,6 +38,10 @@ header {
     height: 50px;
     margin: 10px; /* Space around the funding logos */
 }
+.funding-logo[src*="ANI.jpg"] {
+    height: 60px; /* Increased height for ANI logo */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
